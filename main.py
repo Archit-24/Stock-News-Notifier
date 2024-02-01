@@ -4,13 +4,13 @@ from twilio.rest import Client
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
-STOCK_ENDPOINT = "https://www.alphavantage.co/query"
-NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
+STOCK_ENDPOINT = "Endpoint"
+NEWS_ENDPOINT = "Endpoint"
 
-STOCK_API = "3LKMQRGJ24B4NVPH"
-NEWS_API_KEY = "e94345cdd15a4c288e3b8251d10a9508"
-TWILIO_SID = "AC78e16fc76248370cb83073dd56d0da6b"
-TWILIO_AUTH = "59a6417b4ee241c7ddc4e17b51c33643"
+STOCK_API = "API"
+NEWS_API_KEY = "API"
+TWILIO_SID = "Yur SID"
+TWILIO_AUTH = "Yur auth"
 
     ## STEP 1: Use https://www.alphavantage.co/documentation/#daily
 # When stock price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
@@ -69,8 +69,8 @@ if abs(diff_percent) == 0:
     for article in formatted_list:
         message = client.messages.create(
             body=article,
-            from_="+14848512765",
-            to="+919560890859"
+            from_="Your virtual number",
+            to="Your number"
         )
 
 
